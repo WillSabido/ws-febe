@@ -1,7 +1,7 @@
 WordPress Theme - Febe
 ======================
 
-Febe is a WordPress theme based on _s ('underscores')
+Febe is a WordPress theme based on _s ('underscores' - http://underscores.me/)
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
 * A helpful 404 template.

@@ -390,6 +390,7 @@ textarea {
 	min-height: 42px;
 	border: none;
 	border-radius: none;
+	margin-bottom: 0px;
 }
 
 /*--------------------------------------------------------------
@@ -904,6 +905,15 @@ object {
 .carousel-caption ul {
 	text-indent: 20px;
 	margin: 0 0 35px 0px;
+}
+/*--------------------------------------------------------------
+12.2 Media - ADVPS Carousel
+--------------------------------------------------------------*/
+div#advps_container1 {
+	position: relative;
+	top: -200px;
+	z-index: -10;
+	margin-bottom: -200px;
 }
 /*--------------------------------------------------------------
 13.0 - Bootstrap edits
