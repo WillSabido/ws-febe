@@ -17,6 +17,7 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Federo|Tenor+Sans|Josefin+Slab|Exo:400,800,200italic,700italic|Jura:400,600|Gruppo' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 

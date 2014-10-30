@@ -45,6 +45,7 @@ and Blueprint http://www.blueprintcss.org/
 11.0 - Infinite scroll
 12.0 - Media
 	12.1 - Carousel
+13.0 - Bootstrap edits
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -137,23 +138,35 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Federo', 'Tenor Sans', 'Josefin Slab', 'Exo', 'Jura', 'Gruppo', sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
 }
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Exo', sans-serif;
+	font-weight: 800;
 	clear: both;
 }
 h1 {
-	font-size: 130%;
+	font-size: 160%;
 	font-weight: bold;
 }
 h2 {
-	font-size: 120%;
+	font-size: 150%;
+	font-weight: 700italic;
 }
 h3 {
-	font-size: 115%;
+	font-size: 140%;
+}
+h4 {
+	font-size: 120%;
+}
+h5 {
+	font-size: 110%;
+}
+h6 {
+	font-size: 100%;
 }
 div#secondary h1 {
 	font-size: 120%;
@@ -226,7 +239,7 @@ hr {
 	margin-bottom: 1.5em;
 }
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 0 0;
 }
 ul {
 	list-style: disc;
@@ -263,6 +276,7 @@ button,
 input,
 select,
 textarea {
+	font-family: 'Helvetica', sans-serif;
 	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
@@ -309,6 +323,7 @@ input[type="radio"] {
 	padding: 0; /* Addresses excess padding in IE8/9 */
 }
 input[type="search"] {
+	margin-right: 40px;
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
 	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
 	-moz-box-sizing:    content-box;
@@ -382,7 +397,9 @@ textarea {
 	color: White;
 	background: #357ebd;
 }
-
+ul.menu>li:first-child {
+	margin-left: 40px;
+}
 /*--------------------------------------------------------------
 5.0.1 Bootstrap Navbar
 --------------------------------------------------------------*/
@@ -596,6 +613,10 @@ a.btn span {
 	max-width: 100%;
 }
 
+h1.widget-title {
+	border-bottom: 1px solid lightcoral;
+}
+
 /* Search widget */
 .widget_search .search-submit {
 	display: none;
@@ -609,6 +630,7 @@ div#secondary {
 	min-height: 250px;
 	padding: 40px;
 	background: ghostwhite;
+	background-image: url('paper.gif');
 	-webkit-border-top-left-radius: 5px;
 	-webkit-border-top-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 60px;
@@ -915,9 +937,24 @@ div#advps_container1 {
 	z-index: -10;
 	margin-bottom: -200px;
 }
+div.advps-slide > div {
+	bottom: 0px;
+	right: 0px;
+}
+div.advps-slide div {
+	font-family: 'Jura', sans-serif;
+}
 /*--------------------------------------------------------------
 13.0 - Bootstrap edits
 --------------------------------------------------------------*/
 .jumbotron {
 	border-radius: 20px;
+}
+.jumbotron#welcome {
+	background-image: fixed bottom right no-repeat url('');
+}
+ul#febeTab {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
