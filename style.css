@@ -614,7 +614,7 @@ a.btn span {
 }
 
 h1.widget-title {
-	border-bottom: 1px solid lightcoral;
+	border-bottom: 1px solid darkred;
 }
 
 /* Search widget */
@@ -630,7 +630,7 @@ div#secondary {
 	min-height: 250px;
 	padding: 40px;
 	background: ghostwhite;
-	background-image: url('paper.gif');
+	background-image: url('images/img-noise-361x370.png');
 	-webkit-border-top-left-radius: 5px;
 	-webkit-border-top-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 60px;
@@ -645,7 +645,7 @@ div#secondary {
 	border-bottom-left-radius: 5px;
 }
 div#secondary aside {
-	width: 30%;
+/*	width: 30%;*/
 	margin: 20px;
 	float: left;
 }
@@ -662,6 +662,9 @@ div#secondary aside#cycledtestimonialwidget-2 {
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+p {
+	font-family: 'Exo', san-serif;
+}
 div#content {
 	margin-left: 40px;
 	margin-right: 40px;
@@ -691,16 +694,17 @@ div.panel-heading a {
 header img {
 	height: 140px;
 }
-
 .panel-group p {
   margin-bottom: 0px;
 }
 body.category-services article {
 	background: #eee;
+	background: url('images/img-noise-361x370.png');
 	width:90%;
 	margin: 5%;
 	padding:5%;
 	border-radius: 5px;
+	padding-top: 0;
 }
 
 /*--------------------------------------------------------------
@@ -730,6 +734,14 @@ body.category-services article {
 }
 article#post-8 header {
 	display: none;
+}
+header.entry-header {
+	display: inline-block;
+	background: white;
+	margin-left: -58px;
+	padding: 20px 80px 10px 40px;
+	border-bottom: 4px dashed darkred;
+	border-radius: 0 50px 10px 0;
 }
 body.page header.entry-header {
 	position: relative;
@@ -951,10 +963,24 @@ div.advps-slide div {
 	border-radius: 20px;
 }
 .jumbotron#welcome {
-	background-image: fixed bottom right no-repeat url('');
+	background-image: url('images/img-noise-361x370.png'), fixed bottom right no-repeat url('');
 }
 ul#febeTab {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
+}
+.tab-content {
+	background: rgba(237,237,237,1);
+	background: -moz-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border: 0px solid #000000;
 }
