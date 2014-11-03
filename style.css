@@ -372,8 +372,11 @@ textarea {
 /*--------------------------------------------------------------
 5.0 Navigation
 --------------------------------------------------------------*/
-.main-navigation, .main-navigation ul, .main-navigation ul ul, .main-navigation ul li {
+.main-navigation, .main-navigation ul, .main-navigation ul>li {
 	background: #428bca;
+}
+.main-navigation ul ul li {
+	background: rgba(75, 141, 195, 0.74);
 }
 .main-navigation {
 	box-shadow: 0px 1px 2px #888888;
@@ -395,10 +398,18 @@ textarea {
 .main-navigation a:hover {
 	text-decoration: none;
 	color: White;
-	background: #357ebd;
+	background: darkred;
+	-webkit-transition: background 800ms ease-in-out;
+	-moz-transition: background 800ms ease-in-out;
+	-ms-transition: background 800ms ease-in-out;
+	-o-transition: background 800ms ease-in-out;
+	transition: background 800ms ease-in-out;
 }
 ul.menu>li:first-child {
 	margin-left: 40px;
+}
+.main-navigation ul ul li {
+	background: rgba(94, 160, 215, 0.34);
 }
 /*--------------------------------------------------------------
 5.0.1 Bootstrap Navbar
@@ -406,7 +417,7 @@ ul.menu>li:first-child {
 .navbar {
 	min-height: 42px;
 	border: none;
-	border-radius: none;
+	border-radius: 0px;
 	margin-bottom: 0px;
 }
 
@@ -424,6 +435,11 @@ a:focus,
 a:active {
 	text-decoration: none;
 	color: DarkRed;
+	-webkit-transition: color 800ms ease-in-out;
+	-moz-transition: color 800ms ease-in-out;
+	-ms-transition: color 800ms ease-in-out;
+	-o-transition: color 800ms ease-in-out;
+	transition: color 800ms ease-in-out;
 }
 a:visited.btn, a:active.btn {
 	color: White;
@@ -442,6 +458,7 @@ a.btn span {
 	display: block;
 	float: left;
 	width: 100%;
+	border-top: 2px solid darkred;
 }
 .main-navigation ul {
 	list-style: none;
@@ -629,18 +646,20 @@ h1.widget-title {
 div#secondary {
 	min-height: 250px;
 	padding: 40px;
-	background: ghostwhite;
-	background-image: url('images/img-noise-361x370.png');
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 10px;
+	background: #f1f1f1;
+	background-image: url('images/footer_grad_2.png');
+	background-repeat: repeat-x;
+	border-top: 4px solid darkred;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
 	-webkit-border-bottom-right-radius: 60px;
 	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 10px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
 	-moz-border-radius-bottomright: 60px;
 	-moz-border-radius-bottomleft: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 10px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 	border-bottom-right-radius: 60px;
 	border-bottom-left-radius: 5px;
 }
@@ -670,6 +689,12 @@ div#content {
 	margin-right: 40px;
 	width: auto;
 }
+div.site-branding {
+	z-index: 9;
+}
+nav#site-navigation {
+	z-index: 10;
+}
 div.site-info {
 	font-family: calibri, sans-serif;
 	font-size: 12px;
@@ -691,8 +716,14 @@ div.panel-heading a {
 	left:-40px;
 	top: 8px;
 }
+header#masthead {
+	background: url('images/header_gradient.png');
+	background-repeat: repeat-x;
+}
 header img {
 	height: 140px;
+	z-index: 90;
+	position: relative;
 }
 .panel-group p {
   margin-bottom: 0px;
@@ -732,15 +763,23 @@ body.category-services article {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+/* Headers */
+header.page-header {
+	background: url('images/img-noise-361x370.png');
+	padding: 30px;
+}
+header.page-header h1 {
+	border-bottom: 2px solid darkred;
+}
 article#post-8 header {
 	display: none;
 }
 header.entry-header {
 	display: inline-block;
 	background: white;
-	margin-left: -58px;
+	margin-left: -7%;
 	padding: 20px 80px 10px 40px;
-	border-bottom: 4px dashed darkred;
+	border-bottom: 4px solid darkred;
 	border-radius: 0 50px 10px 0;
 }
 body.page header.entry-header {
@@ -844,7 +883,7 @@ object {
 .carousel {
 	position: relative;
 	top: -200px;
-	z-index: -10;
+	z-index: 1;
 	margin-bottom: -200px;
 }
 .carousel-inner > .item > img { margin: 0 auto; }
@@ -946,7 +985,7 @@ object {
 div#advps_container1 {
 	position: relative;
 	top: -200px;
-	z-index: -10;
+	z-index: 1;
 	margin-bottom: -200px;
 }
 div.advps-slide > div {
@@ -959,12 +998,20 @@ div.advps-slide div {
 /*--------------------------------------------------------------
 13.0 - Bootstrap edits
 --------------------------------------------------------------*/
+/* jumbotron */
 .jumbotron {
 	border-radius: 20px;
 }
 .jumbotron#welcome {
-	background-image: url('images/img-noise-361x370.png'), fixed bottom right no-repeat url('');
+	background: url('images/africa_globe_1.png'), url('images/img-noise-361x370.png');
+	background-repeat: no-repeat, repeat;
+	background-position: right top, left top;
 }
+.jumbotron h1 {
+	border-bottom: 4px solid darkred;
+	margin-bottom: 20px;
+}
+/* tabs */
 ul#febeTab {
 	width: 90%;
 	margin-left: 5%;
@@ -982,5 +1029,17 @@ ul#febeTab {
 	border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
 	-webkit-border-radius: 10px 10px 0px 0px;
-	border: 0px solid #000000;
+	border-top: 1px solid #dedede;
+	padding: 30px;
+}
+.nav-tabs {
+	border-bottom: none;
+}
+.nav-tabs>li>a:hover {
+	border-color: #eee #eee #ededed;
+	-webkit-transition: background 800ms ease-in-out;
+	-moz-transition: background 800ms ease-in-out;
+	-ms-transition: background 800ms ease-in-out;
+	-o-transition: background 800ms ease-in-out;
+	transition: background 800ms ease-in-out;
 }
