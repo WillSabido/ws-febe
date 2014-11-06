@@ -18,6 +18,11 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Federo|Tenor+Sans|Josefin+Slab|Exo:400,800,200italic,700italic|Jura:400,600|Gruppo' rel='stylesheet' type='text/css'>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="<?php get_template_directory() . '/js/html5shiv.js' ?>"></script>
+          <script src="<?php get_template_directory() . '/js/respond.min.js' ?>"></script>
+        <![endif]-->
 <?php wp_head(); ?>
 </head>
 

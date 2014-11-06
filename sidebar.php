@@ -8,7 +8,7 @@
 	<div id="secondary" class="widget-area container-fluid" role="complementary">
 	<div class="row">
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-			<div class="col-xs-12 col-md-8">
+<!--			<div class="col-xs-12 col-md-4"> -->
 			<aside id="search" class="widget widget_search">
 				<?php get_search_form(); ?>
 			</aside>
@@ -28,10 +28,8 @@
 					<?php wp_meta(); ?>
 				</ul>
 			</aside>
-			</div><!-- cols div-->
-			<div class="col-xs-6 col-md-4">
+<!--			</div> End cols div-->
 
 		<?php endif; // end sidebar widget area ?>
-			</div>
 	</div><!-- end row -->
 	</div><!-- #secondary -->
