@@ -375,6 +375,13 @@ textarea {
 	font-family: Josefin slab;
 	font-size: 1.2em;
 }
+a.btn.btn-primary {
+	background: rgba(66, 136, 205, 0.86);
+}
+a:hover.btn.btn-primary {
+	border: 1px solid darkred;
+	background: rgba(66, 136, 205, 1);
+}
 /*--------------------------------------------------------------
 5.0 Navigation  (orig main-navigation colour #428bca;)
 --------------------------------------------------------------*/
@@ -638,7 +645,7 @@ ul.menu>li:nth-child(1) {
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em 1.5em;
+/*	margin: 0 0 1.5em 1.5em; */
 }
 
 /* Make sure select elements fit in widgets */
@@ -681,8 +688,16 @@ div#secondary {
 }
 div#secondary aside {
 /*	width: 30%;*/
-	margin: 20px;
+/*	margin: 20px; */
 	float: left;
+}
+aside ul, aside ul li, aside#nav_menu_2 ul, ul#menu-site-map, ul#menu-site-map li, ul#menu-site-map li>ul {
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	list-style-type: ethiopic;
+	margin-left: 5%;
 }
 div#secondary aside#cycledtestimonialwidget-2 {
 	width: 420px;
