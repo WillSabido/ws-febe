@@ -156,6 +156,9 @@ if (!is_admin()) {
 		// Popovers
 		wp_register_script('popover', get_template_directory() . '/js/popover.js', array(), null, true);
 		wp_enqueue_script('popover');
+		// Navigation for mobile
+		wp_register_script('mobile-nav', get_template_directory() . '/js/navigation.js', array(), null, true);
+		wp_enqueue_script('mobile-nav');
 	}
 
 } // end if !is_admin

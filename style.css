@@ -1073,6 +1073,12 @@ div.advps-slide div {
     from {background: darkred; left: -2000px;}
     to {background: #1e73be; -moz-opacity: 0.6; filter: alpha(opacity=60);opacity: 0.6; left: 0px;}
 }
+/* Disable on mobile */
+@media screen and (max-width: 700px) {
+	div#advpscontainer1 {
+		display: none;
+	}
+}
 /*--------------------------------------------------------------
 13.0 - Bootstrap edits
 --------------------------------------------------------------*/
