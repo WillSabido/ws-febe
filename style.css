@@ -438,7 +438,7 @@ ul.menu>li:first-child {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: rgba(22, 114, 194, 0.8);
 }
 a:visited {
 	color: DarkSlateGrey;
@@ -462,7 +462,6 @@ a.btn span {
 	left: -25px;
 	top: 3px;
 }
-
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
@@ -472,14 +471,15 @@ a.btn span {
 	float: left;
 	width: 100%;
 	border-top: 2px solid darkred;
+	font-family: Josefin slab;
+	font-size: large;
 }
 .main-navigation ul {
 	list-style: none;
-	margin: 0;
-	padding-left: 0;
+	margin: -1px;
 }
 .main-navigation ul:nth-child(2) {
-	margin-top:4px;
+	margin-top:0px;
 }
 .main-navigation li {
 	float: left;
@@ -495,7 +495,6 @@ a.btn span {
 	float: left;
 	left: 0;
 	position: absolute;
-	top: 2.5em;
 	z-index: 99999;
 }
 .main-navigation ul ul ul {
@@ -652,11 +651,13 @@ ul.menu>li:nth-child(1) {
 .widget select {
 	max-width: 100%;
 }
-
+/* Style links & titles for widgets */
+aside a {
+	font-family: Josefin slab;
+}
 h1.widget-title {
 	border-bottom: 1px solid darkred;
 }
-
 /* Search widget */
 .widget_search .search-submit {
 	display: none;
@@ -696,7 +697,7 @@ aside ul, aside ul li, aside#nav_menu_2 ul, ul#menu-site-map, ul#menu-site-map l
 	border-right: none;
 	border-bottom: none;
 	border-top: none;
-	list-style-type: ethiopic;
+	list-style-type: circle;
 	margin-left: 5%;
 }
 div#secondary aside#cycledtestimonialwidget-2 {
@@ -715,8 +716,8 @@ p, ul {
 	font-family: 'Exo', san-serif;
 }
 div#primary {
-	margin-left: 8%;
-	margin-right: 8%;
+	margin-left: 0%;
+	margin-right: 0%;
 }
 .home div#primary {
 	margin-left: 0;
@@ -1078,6 +1079,14 @@ div.advps-slide div {
 	div#advpscontainer1 {
 		display: none;
 	}
+	div#content {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	div#primary {
+		margin-left: 0px;
+		margin-right: 0px;
+	}	
 }
 /*--------------------------------------------------------------
 13.0 - Bootstrap edits
@@ -1150,4 +1159,8 @@ div.tab-content i {
 }
 .popover-title {
 	border-bottom: 1px solid darkred;
+}
+/* Font Awesome edit */
+body.page-id-27 div#primary.content-area i.fa {
+	left: 0px;
 }
