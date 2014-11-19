@@ -399,7 +399,7 @@ a:hover.btn.btn-primary {
 	top: 0px;
 }
 .main-navigation a {
-	padding: 10px;
+	padding: 10px 10px 7px 10px;
 	color: White;
 }
 .main-navigation a:active {
@@ -471,8 +471,10 @@ a.btn span {
 	float: left;
 	width: 100%;
 	border-top: 2px solid darkred;
-	font-family: Josefin slab;
 	font-size: large;
+}
+.main-navigation a {
+	font-family: 'Josefin slab';
 }
 .main-navigation ul {
 	list-style: none;
@@ -653,7 +655,7 @@ ul.menu>li:nth-child(1) {
 }
 /* Style links & titles for widgets */
 aside a {
-	font-family: Josefin slab;
+	font-family: 'Josefin slab';
 }
 h1.widget-title {
 	border-bottom: 1px solid darkred;
@@ -767,7 +769,7 @@ header img {
 .panel-group p {
   margin-bottom: 0px;
 }
-body.category-services article, body.tag article, body.archive article, body.single article, body.page article {
+body.category-services article, body.tag article, body.archive article, body.single article, body.page article, body.search article {
 	background: #eee;
 	background: url('images/img-noise-361x370.png');
 	width:90%;
@@ -1076,7 +1078,7 @@ div.advps-slide div {
 }
 /* Disable on mobile */
 @media screen and (max-width: 700px) {
-	div#advpscontainer1 {
+	div#advps_container1 {
 		display: none;
 	}
 	div#content {
