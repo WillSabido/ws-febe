@@ -377,10 +377,16 @@ textarea {
 }
 a.btn.btn-primary {
 	background: rgba(66, 136, 205, 0.86);
+	border-color: rgba(182, 87, 87, 0.78);
 }
 a:hover.btn.btn-primary {
 	border: 1px solid darkred;
-	background: rgba(66, 136, 205, 1);
+	background: DarkRed;
+	-webkit-transition: background 800ms ease-in-out;
+	-moz-transition: background 800ms ease-in-out;
+	-ms-transition: background 800ms ease-in-out;
+	-o-transition: background 800ms ease-in-out;
+	transition: background 800ms ease-in-out;
 }
 /*--------------------------------------------------------------
 5.0 Navigation  (orig main-navigation colour #428bca;)
@@ -659,6 +665,10 @@ aside a {
 }
 h1.widget-title {
 	border-bottom: 1px solid darkred;
+	text-align: center;
+	text-align: -webkit-center;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
 }
 /* Search widget */
 .widget_search .search-submit {
@@ -716,6 +726,12 @@ div#secondary aside#cycledtestimonialwidget-2 {
 --------------------------------------------------------------*/
 p, ul {
 	font-family: 'Exo', san-serif;
+}
+.entry-content ul {
+	margin-left: 50px;
+}
+.tab-content ul {
+	margin-left: 0;
 }
 div#primary {
 	margin-left: 0%;
